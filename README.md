@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/m3rcury02/FirstTailwind/blob/master/images/FirstTailwind.png?raw=true)
+![Logo](https://github.com/m3rcury02/FirstTailwind/blob/master/images/First_tailwind_white.png?raw=true)
 
 
 # First Tailwind
