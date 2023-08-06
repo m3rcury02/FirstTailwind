@@ -11,3 +11,7 @@ My first website created using Tailwind css.
 
 https://m3rcury02.github.io/FirstTailwind/
 
+
+## Tech Stack
+
+**Frontend:** TailwindCSS, React.JS(soon)
