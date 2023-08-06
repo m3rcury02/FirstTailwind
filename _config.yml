@@ -1,0 +1,20 @@
+# Site settings
+title: FirstTailwind
+email: gunal2002@gmail.com
+description: My first website created using tailwind css.
+baseurl: ""
+url: "http://firsttailwind.com"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Social links
+github_username: m3rcury02
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-feed
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
