@@ -606,6 +606,36 @@ video {
   margin-top: 1.75rem;
 }
 
+.-ms-10 {
+  -webkit-margin-start: -2.5rem;
+          margin-inline-start: -2.5rem;
+}
+
+.-ms-8 {
+  -webkit-margin-start: -2rem;
+          margin-inline-start: -2rem;
+}
+
+.-ms-5 {
+  -webkit-margin-start: -1.25rem;
+          margin-inline-start: -1.25rem;
+}
+
+.-ms-0 {
+  -webkit-margin-start: -0px;
+          margin-inline-start: -0px;
+}
+
+.-ms-1 {
+  -webkit-margin-start: -0.25rem;
+          margin-inline-start: -0.25rem;
+}
+
+.me-auto {
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+}
+
 .block {
   display: block;
 }
