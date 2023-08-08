@@ -17,16 +17,34 @@
             </div>
             <!-- Menu items -->
             <div class="hidden md:flex space-x-10 p-5">
-                <a href="#" class="hover:text-teal-500 transition">Tech</a>
-                <a href="#" class="hover:text-cyan-500 transition">Product</a>
-                <a href="#" class="hover:text-sky-500 transition">About Me</a>
-                <a href="#" class="hover:text-blue-500 transition">Careers</a>
-                <a href="#" class="hover:text-indigo-500 transition">University</a>
+                <a href="https://www.linkedin.com/in/gunal1501/" class="hover:text-sky-500 transition">LinkedIn</a>
+                <a href="mailto: gunal2002@gmail.com" class="hover:text-blue-500 transition">Email</a>
+                <a href="https://vit.ac.in/" class="hover:text-indigo-500 transition">My University</a>
             </div>
             <a href="https://github.com/m3rcury02/" class="hidden md:block mx-auto p-3 px-5 pt-2 text-white bg-sky-700 rounded-md hover:bg-teal-500 transition">
                 View Github Profile
             </a>
+            <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
         </div>
+        <div class="md:hidden">
+            <div
+              id="menu"
+              class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+              <a href="#">Pricing</a>
+              <a href="#">Product</a>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Community</a>
+            </div>
+          </div>
     </nav>
     <!-- Hero section -->
     <section id="hero">
@@ -46,63 +64,67 @@
             </div>
         </div>
     </section>
+    <!-- Features -->
     <section id="features">
         <!-- Flex container -->
-        <div class="container flex flex-col justify-between pt-5 mx-auto my-auto mb-6 items-start space-y-5 mt-10 md:flex-row">
-            <div class="flex flex-col p-6 space-y-5">
-                <h1 class="text-4xl font-extrabold">Some of my projects:</h1>
-                <p>Explore my diverse range of innovative projects, showcasing my technical and creative problem-solving skills. Click on them to know more!</p>
+        <div class="container flex flex-col pt-5 m-auto mb-7 items-start mt-10 md:flex-row">
+            <div class="flex flex-col mx-auto p-6 pe-24 space-y-5">
+                <h1 class="text-4xl font-extrabold ">Some of my projects:</h1>
+                <p>Explore my diverse range of innovative projects,<br> showcasing my technical and creative problem-solving skills. <div class="text-teal-800">Click on them to know more!</div></p>
             </div>
             
-                <div class="container flex flex-col mx-auto p-6 space-y-5">
+                <div class="container flex flex-col p-6 space-y-5 items-end md:w-5/12">
                     <div class="flex flex-col">
                         <a href="https://github.com/m3rcury02/StudyTube">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col hover:text-teal-800 transition">
                             <!-- Heading -->
                             <div class="rounded-l-full min-w-full bg-teal-100 md:bg-transparent">
                                 <div class="div flex items-center space-x-2">
                                     <div class="rounded-full text-white w-fit p-1 px-2 bg-teal-800">
-                                    01
-                                    </div>
                                     <h3>StudyTube</h3>
+                                    </div>
                                 </div>
                             </div>
-                            An Android application using YouTube's API which helps you to focus on your
-                    educational videos and eliminates all distractions and advertisements.
+                            <p class="ps-5">
+                                An Android application using YouTube's API which helps you to focus on your
+                                                    educational videos and eliminates all distractions and advertisements.
+                            </p>
                         </div>
                     </a>
                     </div>
                     <div class="flex flex-col">
                         <a href="https://www.kaggle.com/code/m3rcury02/handwriting-recog">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col hover:text-teal-800 transition">
                             <!-- Heading -->
                             <div class="rounded-l-full min-w-fit bg-teal-100 md:bg-transparent">
                                 <div class="div flex items-center space-x-2">
                                     <div class="rounded-full text-white w-fit p-1 px-2 bg-teal-800">
-                                    02
-                                    </div>
                                     <h3>Scripto</h3>
+                                    </div>
                                 </div>
                             </div>
-                            Developed a handwriting recognition model using CNN and AI which accurately
-                    identifies handwritten digits and letters from images and converts them to text.
+                            <p class="ps-5">
+                                Developed a handwriting recognition model using CNN and AI which accurately
+                                                    identifies handwritten digits and letters from images and converts them to text.
+                            </p>
                         </div>
                      </a>
                     </div>
                     <div class="flex flex-col">
                         <a href="https://github.com/m3rcury02/CovidHelper">
-                        <div class="flex flex-col">
+                        <div class="flex flex-col hover:text-teal-800 transition">
                             <!-- Heading -->
                             <div class="rounded-l-full  bg-teal-100 md:bg-transparent">
                                 <div class="div flex items-center space-x-2">
                                     <div class="rounded-full text-white w-fit p-1 px-2 bg-teal-800">
-                                    03
-                                    </div>
                                     <h3>Covid Helper</h3>
+                                    </div>
                                 </div>
                             </div>
-                            An Android application developed with Kotlin that can be used in the Covid-19
-                    pandemic as a platform to donate and request O2, Beds, etc.
+                            <p class="ps-5">
+                                An Android application developed with Kotlin that can be used in the Covid-19
+                                                    pandemic as a platform to donate and request O2, Beds, etc.
+                            </p>
                         </div>
                     </a>
                     </div>
@@ -115,5 +137,20 @@
             
         </div>
     </section>
+    <section id="cta" class="bg-sky-500">
+        <!-- Flex container -->
+        <div class="container flex justify-around items-center py-20 ps-5 space-x-24">
+            <h1 class="text-5xl font-bold text-white w-1/2">Thanks for visiting my site!</h1>
+            <div>
+                <a
+  href="https://docs.google.com/document/d/1nr1VArzzYaGCP_PrYRdPdahzTRu625nc0UIqbj3aHV0/edit?usp=sharinghttps://docs.google.com/document/d/1nr1VArzzYaGCP_PrYRdPdahzTRu625nc0UIqbj3aHV0/edit?usp=sharing"
+  class="inline-block mt-7 mx-auto p-5 px-7 text-sky-500 bg-white rounded-full transition-all duration-300 hover:scale-150"
+>
+  <p class="font-bold">My Resume</p>
+</a>
+
+        </div>
+    </section>
+    <script src="../js/script.js"></script>
 </body>
 </html>
