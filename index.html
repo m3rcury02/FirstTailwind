@@ -1,1 +1,485 @@
-<meta http-equiv="refresh" content="0; url=src/index.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gunal Seenivasagan · Data &amp; AI Engineer</title>
+  <meta name="description" content="Data and AI engineer building incremental pipelines, retrieval systems and the checks that keep them correct. Databricks, Spark, Delta Lake, RAG and retrieval evaluation.">
+  <meta name="author" content="Gunal Seenivasagan">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#EEF1F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C1214" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://m3rcury02.github.io/FirstTailwind/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Gunal Seenivasagan · Data &amp; AI Engineer">
+  <meta property="og:description" content="Pipelines that prove their own numbers. Incremental RAG ingestion on Databricks, retrieval evaluation in CI, and hourly ingestion from 372 job boards.">
+  <meta property="og:url" content="https://m3rcury02.github.io/FirstTailwind/">
+  <meta property="og:image" content="https://m3rcury02.github.io/FirstTailwind/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Martian+Mono:wdth,wght@75..112.5,100..800&amp;display=swap">
+  <link rel="stylesheet" href="assets/site.css">
+
+  <script>
+    /* Apply a saved theme before first paint. No saved choice = follow the system. */
+    try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gunal Seenivasagan",
+    "jobTitle": "Data & AI Engineer",
+    "email": "mailto:gunal.works@gmail.com",
+    "url": "https://m3rcury02.github.io/FirstTailwind/",
+    "alumniOf": "VIT University, Vellore",
+    "knowsAbout": ["Data engineering", "Apache Spark", "Databricks", "Delta Lake", "Retrieval-augmented generation", "Retrieval evaluation", "Python", "SQL"],
+    "sameAs": ["https://github.com/m3rcury02", "https://www.linkedin.com/in/gunal1501/", "https://www.kaggle.com/m3rcury02"]
+  }
+  </script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Gunal Seenivasagan, back to top">
+        <span class="brand__mark" aria-hidden="true">GS</span>
+        <span class="brand__name">Gunal Seenivasagan</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="topbar__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 14.6A8 8 0 0 1 9.4 4.4a8 8 0 1 0 10.2 10.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+        <a class="btn btn--small" href="https://docs.google.com/document/d/1nr1VArzzYaGCP_PrYRdPdahzTRu625nc0UIqbj3aHV0/edit?usp=sharing" target="_blank" rel="noopener">Résumé</a>
+        <button class="icon-btn menu-btn" type="button" popovertarget="menu" aria-label="Open section menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="menu" id="menu" popover aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── Hero ───────────── -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Gunal Seenivasagan <span aria-hidden="true">·</span> Data &amp; AI engineer <span aria-hidden="true">·</span> India</p>
+          <h1 class="display">Pipelines that prove their own numbers.</h1>
+          <p class="lede">I build incremental data pipelines and retrieval systems, plus the checks that stop a bad load before it reaches production. Project figures on this page link to the run that produced them.</p>
+          <p class="hero__now">Currently a full-stack developer at Miebach Consulting, working on a production warehouse management system.</p>
+          <div class="hero__cta">
+            <a class="btn" href="#work">See the work</a>
+            <a class="btn btn--ghost" href="https://github.com/m3rcury02" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/gunal1501/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <figure class="ledger" aria-labelledby="ledger-cap">
+          <div class="ledger__head">
+            <span class="ledger__layers" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mono">ops_run_log</span>
+            <span class="ledger__where">spark-rag · dev target</span>
+          </div>
+          <div class="ledger__scroll">
+            <table class="ledger__table">
+              <thead>
+                <tr><th scope="col">Run</th><th scope="col">Release step</th><th scope="col" class="num">Embedded</th><th scope="col">Result</th></tr>
+              </thead>
+              <tbody>
+                <tr style="--i:0"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m5_c_detect_v3.5.0_initial.json" target="_blank" rel="noopener">m5_c</a></td><td>load v3.5.0</td><td class="num">5,567 · 100%</td><td><span class="chip chip--ok">committed</span></td></tr>
+                <tr style="--i:1"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m5_d_detect_v4.0.0_drift.json" target="_blank" rel="noopener">m5_d</a></td><td>v3.5.0 → v4.0.0</td><td class="num">docs −13.1%</td><td><span class="chip chip--warn">held: drift</span></td></tr>
+                <tr style="--i:2"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m5_h_detect_v4.0.0_accepted.json" target="_blank" rel="noopener">m5_h</a></td><td>v3.5.0 → v4.0.0</td><td class="num">1,866 · 34.4%</td><td><span class="chip chip--gold">accepted</span></td></tr>
+                <tr style="--i:3"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m5_k_detect_v4.0.1.json" target="_blank" rel="noopener">m5_k</a></td><td>v4.0.0 → v4.0.1</td><td class="num">21 · 0.39%</td><td><span class="chip chip--ok">committed</span></td></tr>
+                <tr style="--i:4"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m7_b_dev_latest_detect.json" target="_blank" rel="noopener">m7_b</a></td><td>v4.0.1 → v4.2.0</td><td class="num">docs +11.7%</td><td><span class="chip chip--warn">held: drift</span></td></tr>
+                <tr style="--i:5"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m7_d_dev_v4.2.0_accepted_detect.json" target="_blank" rel="noopener">m7_d</a></td><td>v4.0.1 → v4.2.0</td><td class="num">802 · 13.3%</td><td><span class="chip chip--gold">accepted</span></td></tr>
+                <tr style="--i:6"><td><a href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m7_e_dev_latest_again_detect.json" target="_blank" rel="noopener">m7_e</a></td><td>v4.2.0 again</td><td class="num">0 · 0%</td><td><span class="chip chip--quiet">no-op</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ledger__foot mono">
+            <span>gold_chunk_embeddings</span>
+            <span>6,051 chunks · <span class="hash">671b1434…</span> = prod full load</span>
+          </div>
+          <figcaption id="ledger-cap">Selected runs of my Databricks RAG pipeline as it followed Apache Spark’s docs across four releases. The quality gate held two loads on drift until they were reviewed. Each run ID opens its raw output.</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <ul class="evidence" aria-label="Measured results">
+          <li>
+            <span class="evidence__num">15.9%</span>
+            <span class="evidence__text">of chunks re-embedded across three Spark release upgrades: 2,689 of 16,910.</span>
+            <a class="src" href="https://github.com/m3rcury02/spark-rag#incremental-processing-dev-gold-chain-25432-all-minilm-l6-v2" target="_blank" rel="noopener">spark-rag · results</a>
+          </li>
+          <li>
+            <span class="evidence__num">0.57<small>DBU</small></span>
+            <span class="evidence__text">for the incremental v4.2.0 load, against 1.23 for a full load of the same release.</span>
+            <a class="src" href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m7_l_billing_m7_runs.json" target="_blank" rel="noopener">runs/m7_l</a>
+          </li>
+          <li>
+            <span class="evidence__num">599<small>/599</small></span>
+            <span class="evidence__text">data-quality checks recomputed outside Databricks from the git tags, all matching.</span>
+            <a class="src" href="https://github.com/m3rcury02/spark-rag/blob/main/runs/m7_v1_gate_vs_git.json" target="_blank" rel="noopener">runs/m7_v1</a>
+          </li>
+          <li>
+            <span class="evidence__num">52,969</span>
+            <span class="evidence__text">job postings polled across 372 boards to calibrate jobscan-de’s filters.</span>
+            <a class="src" href="https://github.com/m3rcury02/jobscan-de#tuning" target="_blank" rel="noopener">jobscan-de · tuning</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── Work ───────────── -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-h" class="h2">Three systems, each with its evidence in the repo</h2>
+          <p class="section__intro">Every README reports what was measured, what was decided and what still doesn’t work.</p>
+        </header>
+
+        <!-- Case 1 -->
+        <article class="case" id="spark-rag" aria-labelledby="c1-h">
+          <div class="case__main">
+            <p class="case__meta"><span class="layer-dot layer-dot--gold" aria-hidden="true"></span>2026 · Solo project · Databricks</p>
+            <h3 id="c1-h" class="h3">Spark Docs RAG Pipeline</h3>
+            <p class="case__pitch">Incremental RAG ingestion that embeds only what changed between releases.</p>
+            <p>The corpus is the Apache Spark documentation, loaded one release tag at a time from v3.5.0 to v4.2.0. Bronze, silver and gold Delta tables in Unity Catalog feed a Databricks AI Search index. Each run diffs the new release against the last committed run, gates the result, embeds the added chunks and applies one MERGE to gold.</p>
+            <ul class="facts">
+              <li>The v4.0.1 patch release needed <strong>21 of 5,436</strong> chunks embedded.</li>
+              <li>Re-runs are no-ops. They log 0 changed documents, embed nothing and write no new Delta version.</li>
+              <li><strong>9 chunk checks and 5 vector checks</strong> run before gold changes, with drift thresholds calibrated on 42 past releases. Three canary texts must reproduce their committed vectors, which catches a changed model or library.</li>
+              <li>Dev after three upgrades and prod after one full load hold the <strong>same 6,051 chunk IDs</strong>.</li>
+              <li>17 design decisions are written up with the options considered, D-001 to D-017.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Databricks</li><li>Delta Lake</li><li>Unity Catalog</li><li>PySpark</li><li>AI Search</li><li>Asset Bundles</li><li>sentence-transformers</li><li>GitHub Actions</li>
+            </ul>
+            <p class="links">
+              <a href="https://github.com/m3rcury02/spark-rag" target="_blank" rel="noopener">Repository ↗</a>
+              <a href="https://github.com/m3rcury02/spark-rag/blob/main/DECISIONS.md" target="_blank" rel="noopener">Decision log ↗</a>
+              <a href="https://github.com/m3rcury02/spark-rag/tree/main/runs" target="_blank" rel="noopener">Raw runs ↗</a>
+            </p>
+          </div>
+
+          <div class="case__side">
+            <ol class="flow" aria-label="change_detect, the step that publishes a release">
+              <li class="flow__step flow__step--bronze"><span class="flow__name">bronze_docs</span><span class="flow__desc">Markdown from the release tag, sha256 per file. A stored tag must reload identically.</span></li>
+              <li class="flow__step flow__step--silver"><span class="flow__name">silver_chunks</span><span class="flow__desc">Heading-bounded chunks of at most 254 tokens. Each ID hashes its own text, so unchanged sections keep their IDs.</span></li>
+              <li class="flow__step flow__step--gate"><span class="flow__name">diff + DQ gate</span><span class="flow__desc">Compare with the chain head. Size, duplicate, metadata and drift checks.</span></li>
+              <li class="flow__step flow__step--gate"><span class="flow__name">embed added only</span><span class="flow__desc">Pinned model, canary vectors, dimension and unit-length checks.</span></li>
+              <li class="flow__step flow__step--gold"><span class="flow__name">gold_chunk_embeddings</span><span class="flow__desc">One MERGE: insert added, delete removed. Must match the target fingerprint.</span></li>
+              <li class="flow__step flow__step--index"><span class="flow__name">AI Search index</span><span class="flow__desc">Delta Sync, only from a committed state.</span></li>
+            </ol>
+          </div>
+
+          <figure class="plot" aria-labelledby="plot-cap">
+            <div class="plot__head">
+              <span class="plot__title">recall@5 at v4.0.1</span>
+              <span class="plot__note">50 reviewed questions · exact cosine search · 95% bootstrap intervals</span>
+            </div>
+            <div class="plot__body" role="table" aria-label="recall@5 by configuration">
+              <div class="plot__row is-prod" role="row" style="--lo:.54; --pt:.68; --hi:.80">
+                <span class="plot__label" role="rowheader">MiniLM-L6 · 254/32 <em>production</em></span>
+                <span class="plot__track" role="cell" aria-label="0.68, interval 0.54 to 0.80"><i class="plot__ci"></i><i class="plot__pt"></i><b class="plot__val">0.68</b></span>
+              </div>
+              <div class="plot__row" role="row" style="--lo:.60; --pt:.72; --hi:.84">
+                <span class="plot__label" role="rowheader">MiniLM-L6 · 128/16</span>
+                <span class="plot__track" role="cell" aria-label="0.72, interval 0.60 to 0.84"><i class="plot__ci"></i><i class="plot__pt"></i><b class="plot__val">0.72</b></span>
+              </div>
+              <div class="plot__row" role="row" style="--lo:.62; --pt:.74; --hi:.86">
+                <span class="plot__label" role="rowheader">bge-small · 254/32</span>
+                <span class="plot__track" role="cell" aria-label="0.74, interval 0.62 to 0.86"><i class="plot__ci"></i><i class="plot__pt"></i><b class="plot__val">0.74</b></span>
+              </div>
+              <div class="plot__row" role="row" style="--lo:.62; --pt:.74; --hi:.86">
+                <span class="plot__label" role="rowheader">bge-small · 128/16</span>
+                <span class="plot__track" role="cell" aria-label="0.74, interval 0.62 to 0.86"><i class="plot__ci"></i><i class="plot__pt"></i><b class="plot__val">0.74</b></span>
+              </div>
+              <div class="plot__axis" aria-hidden="true">
+                <span></span>
+                <span class="plot__ticks"><i style="--t:.5">0.5</i><i style="--t:.6">0.6</i><i style="--t:.7">0.7</i><i style="--t:.8">0.8</i><i style="--t:.9">0.9</i></span>
+              </div>
+            </div>
+            <figcaption id="plot-cap">The production config scores lowest of the four. With 50 questions the intervals overlap and no recall@5 difference is significant, so it stays: switching would mean re-embedding gold at about half the speed. The live ANN index returned 99.8% of exact search’s top 10.</figcaption>
+          </figure>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="case" id="retrieval-gate" aria-labelledby="c2-h">
+          <div class="case__main">
+            <p class="case__meta"><span class="layer-dot layer-dot--silver" aria-hidden="true"></span>2026 · Solo project · Evaluation</p>
+            <h3 id="c2-h" class="h3">retrieval-gate</h3>
+            <p class="case__pitch">A CI check that fails a pull request when retrieval quality drops.</p>
+            <p>Each config picks a chunker, an embedding model, whether BM25 is fused with dense retrieval, and whether results are reranked. Every config is scored against a graded golden set built from the Kubernetes Tasks docs. A pull request whose hit@5 drops past the threshold fails, and the Action edits one PR comment with the before and after table.</p>
+            <ul class="facts">
+              <li>Two different LLM judges grade the golden set. <strong>Cohen’s kappa</strong> measures their agreement, every disagreement goes to a human, and the freeze step refuses to run until each one is resolved.</li>
+              <li>Labels anchor to character spans instead of chunk IDs, so <strong>one frozen set scores any chunker</strong>.</li>
+              <li>The candidate pool is the union across configs, so the labels don’t favour the config that found them.</li>
+              <li>A script rejects any number in the README that doesn’t appear in a results file.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>PostgreSQL</li><li>pgvector</li><li>BM25 + dense hybrid</li><li>Reranking</li><li>LLM-as-judge</li><li>GitHub Actions</li><li>uv</li>
+            </ul>
+            <p class="links">
+              <a href="https://github.com/m3rcury02/retrieval-gate" target="_blank" rel="noopener">Repository ↗</a>
+              <a href="https://github.com/m3rcury02/retrieval-gate/blob/main/SPEC.md" target="_blank" rel="noopener">Spec ↗</a>
+            </p>
+          </div>
+
+          <div class="case__side">
+            <div class="check" role="group" aria-label="What the gate checks">
+              <div class="check__head">
+                <span class="check__icon" aria-hidden="true"></span>
+                <span class="mono">retrieval-gate / hit@5</span>
+              </div>
+              <div class="check__axes">
+                <p class="check__label">Config axes</p>
+                <ul class="axes">
+                  <li><span>chunker</span>fixed_512 · heading_aware</li>
+                  <li><span>embedding</span>model per config</li>
+                  <li><span>BM25 fusion</span>on · off</li>
+                  <li><span>rerank</span>on · off</li>
+                </ul>
+                <p class="check__label">Scored on</p>
+                <ul class="tags tags--mono">
+                  <li>hit@5</li><li>recall@10</li><li>nDCG@10</li><li>MRR</li><li>procedure_integrity</li>
+                </ul>
+              </div>
+              <table class="check__table">
+                <caption class="check__label">How a report is judged against the baseline</caption>
+                <tbody>
+                  <tr><th scope="row">Config in both</th><td><span class="chip chip--ok">compare</span> fail if hit@5 drops past the threshold</td></tr>
+                  <tr><th scope="row">Config not in baseline</th><td><span class="chip chip--quiet">pass</span> shown as “no baseline”</td></tr>
+                  <tr><th scope="row">Corpus pin, golden set or providers differ</th><td><span class="chip chip--warn">refused</span> names the field, since the scores aren’t comparable</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3 -->
+        <article class="case" id="jobscan-de" aria-labelledby="c3-h">
+          <div class="case__main">
+            <p class="case__meta"><span class="layer-dot layer-dot--bronze" aria-hidden="true"></span>2026 · Solo project · Ingestion</p>
+            <h3 id="c3-h" class="h3">jobscan-de</h3>
+            <p class="case__pitch">Hourly ingestion from 372 company job boards into a scored daily digest.</p>
+            <p>It polls applicant-tracking systems such as Greenhouse, Lever, Ashby, Workday, Oracle and SmartRecruiters every hour through their public endpoints. It filters to India-based data engineering roles, fetches the full job description, scores it against a weighted skill profile and emails a digest that opens with the roles to apply to first.</p>
+            <ul class="facts">
+              <li>Filters were calibrated against a live poll of every board: <strong>52,969 roles</strong>, 27,304 of them in India.</li>
+              <li>Each board’s health is tracked. One that fails for 6 hours, or returns 0 roles after having 5 or more, is listed under <strong>BOARDS DOWN</strong>.</li>
+              <li>An early version marked stale roles as seen and <strong>hid 547 open roles</strong>. The state file now records only what was actually emailed, and can be rebuilt from the pipeline log.</li>
+              <li>GitHub’s scheduler dropped most hourly runs, so an external cron triggers the workflow through the API.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>REST ingestion</li><li>GitHub Actions</li><li>Idempotent state</li><li>SMTP</li>
+            </ul>
+            <p class="links">
+              <a href="https://github.com/m3rcury02/jobscan-de" target="_blank" rel="noopener">Repository ↗</a>
+              <a href="https://github.com/m3rcury02/jobscan" target="_blank" rel="noopener">jobscan, the engine ↗</a>
+            </p>
+          </div>
+
+          <div class="case__side">
+            <ol class="flow" aria-label="One hourly run">
+              <li class="flow__step flow__step--bronze"><span class="flow__name">poll 372 boards</span><span class="flow__desc">Shared adapters per ATS. Failures logged with a reason, never dropped silently.</span></li>
+              <li class="flow__step flow__step--silver"><span class="flow__name">cheap filters</span><span class="flow__desc">Title, India, posted in the last 2 days, experience band, staffing agencies out.</span></li>
+              <li class="flow__step flow__step--gate"><span class="flow__name">fetch full JD</span><span class="flow__desc">One detail call per survivor. A failed fetch shows the role as title-only, never scored on nothing.</span></li>
+              <li class="flow__step flow__step--gate"><span class="flow__name">score</span><span class="flow__desc">Skill banks weighted 3 / 2 / 1, gaps flagged, generic titles kept only if the JD reads as data work.</span></li>
+              <li class="flow__step flow__step--gold"><span class="flow__name">digest + pipeline.csv</span><span class="flow__desc">Apply-first list, boards down, follow-ups. Every role lands in the log.</span></li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- More work -->
+        <div class="more">
+          <h3 class="more__h">More projects</h3>
+          <ul class="cards">
+            <li class="card">
+              <p class="card__meta"><span>2026</span><span class="chip chip--quiet">backend</span></p>
+              <h4 class="card__h"><a href="https://github.com/m3rcury02/ledgerflow" target="_blank" rel="noopener">LedgerFlow <span aria-hidden="true">↗</span></a></h4>
+              <p>Order-to-ledger payment flow: an immutable balanced journal, a transactional outbox to Kafka, idempotent consumers and audited operator recovery. Ships with a FastAPI incident-summary assistant.</p>
+              <ul class="tags"><li>Java 25</li><li>Spring Boot 4.1</li><li>Kafka</li><li>PostgreSQL</li><li>Testcontainers</li></ul>
+            </li>
+            <li class="card">
+              <p class="card__meta"><span>2026</span><span class="chip chip--quiet">applied AI</span></p>
+              <h4 class="card__h"><a href="https://github.com/m3rcury02/supportOps-ai" target="_blank" rel="noopener">SupportOps AI <span aria-hidden="true">↗</span></a></h4>
+              <p>Support and incident operations API where LLM suggestions (summarize, classify, draft a reply) are applied only after a person approves them. Org-scoped roles, SLA sweeper with a dead-letter queue, audit log.</p>
+              <ul class="tags"><li>TypeScript</li><li>Fastify</li><li>Prisma</li><li>BullMQ</li><li>Next.js</li></ul>
+            </li>
+            <li class="card">
+              <p class="card__meta"><span>2026</span><span class="chip chip--warn">in progress</span></p>
+              <h4 class="card__h"><a href="https://github.com/m3rcury02/cloud-incident-platform" target="_blank" rel="noopener">Cloud Incident Platform <span aria-hidden="true">↗</span></a></h4>
+              <p>FastAPI service on AWS provisioned with Terraform: load balancer, ECS Fargate in private subnets, RDS PostgreSQL and Secrets Manager. CI/CD over GitHub OIDC and HTTPS are the next phases.</p>
+              <ul class="tags"><li>Python</li><li>FastAPI</li><li>Terraform</li><li>AWS ECS</li><li>RDS</li></ul>
+            </li>
+            <li class="card">
+              <p class="card__meta"><span>2026</span><span class="chip chip--ok">live</span></p>
+              <h4 class="card__h"><a href="https://venn-roan.vercel.app" target="_blank" rel="noopener">Venn <span aria-hidden="true">↗</span></a></h4>
+              <p>Picks three films a whole group will enjoy. Scores every film for every person and weights toward the least keen, 0.7 × lowest + 0.3 × average. Letterboxd and IMDb imports.</p>
+              <ul class="tags"><li>Next.js 16</li><li>Supabase</li><li>Postgres RLS</li><li>pgTAP</li></ul>
+            </li>
+            <li class="card">
+              <p class="card__meta"><span>2023</span><span class="chip chip--quiet">computer vision</span></p>
+              <h4 class="card__h"><a href="https://github.com/m3rcury02/PicScribe" target="_blank" rel="noopener">PicScribe <span aria-hidden="true">↗</span></a></h4>
+              <p>Android app that captions photos in real time with a Vision Transformer and GPT, built for people with low vision.</p>
+              <ul class="tags"><li>Kotlin</li><li>Python</li><li>ViT</li><li>GPT</li></ul>
+            </li>
+            <li class="card">
+              <p class="card__meta"><span>2023</span><span class="chip chip--quiet">deep learning</span></p>
+              <h4 class="card__h"><a href="https://www.kaggle.com/code/m3rcury02/handwriting-recog" target="_blank" rel="noopener">Scripto <span aria-hidden="true">↗</span></a></h4>
+              <p>Convolutional network that recognises handwritten digits and letters in images and converts them to text.</p>
+              <ul class="tags"><li>Python</li><li>CNN</li><li>Kaggle</li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Approach ───────────── -->
+    <section class="section section--band" id="approach" aria-labelledby="approach-h">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">Approach</p>
+          <h2 id="approach-h" class="h2">How I keep a pipeline honest</h2>
+        </header>
+        <ul class="principles">
+          <li>
+            <h3 class="principle__h">Numbers come from runs</h3>
+            <p>If a figure is in a README, the raw output that produced it is committed next to it. In retrieval-gate a script fails the build when the two disagree.</p>
+          </li>
+          <li>
+            <h3 class="principle__h">Re-runs change nothing</h3>
+            <p>A write is skipped when its input is identical, so a retry can’t double-count rows or add noise to a table’s history.</p>
+          </li>
+          <li>
+            <h3 class="principle__h">Gate before you write</h3>
+            <p>Quality checks, canary vectors and fingerprints run before the published table changes. A failure leaves it exactly as it was.</p>
+          </li>
+          <li>
+            <h3 class="principle__h">Write the decision down</h3>
+            <p>Each significant choice gets an entry with the options considered and the evidence. Known limitations go in the README where a reviewer will see them.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── Experience ───────────── -->
+    <section class="section" id="experience" aria-labelledby="exp-h">
+      <div class="wrap two-col">
+        <header class="section__head">
+          <p class="eyebrow">Experience</p>
+          <h2 id="exp-h" class="h2">Where I’ve shipped</h2>
+        </header>
+        <ol class="timeline">
+          <li class="job">
+            <p class="job__when mono"><time datetime="2024-09">Sep 2024</time> – now</p>
+            <div class="job__body">
+              <h3 class="job__h">Full Stack Developer <span>Miebach Consulting</span></h3>
+              <p>Production warehouse management system, from requirements to release. REST APIs, PostgreSQL query and data-handling optimisation, and root-cause fixes across the UI, API and database layers. Led sprint releases with QA and stakeholders, and ran client training that cut onboarding time by 40%.</p>
+            </div>
+          </li>
+          <li class="job">
+            <p class="job__when mono"><time datetime="2024-05">May</time> – <time datetime="2024-08">Aug 2024</time></p>
+            <div class="job__body">
+              <h3 class="job__h">Software Developer Intern <span>Sirma Business Consulting</span></h3>
+              <p>Backend services for a core banking system in Java and Spring Boot. Cut API response time by 25% through SQL and query tuning, and built React Native features.</p>
+            </div>
+          </li>
+          <li class="job">
+            <p class="job__when mono"><time datetime="2019">2019</time> – <time datetime="2024-08">2024</time></p>
+            <div class="job__body">
+              <h3 class="job__h">M.Tech Integrated, Software Engineering <span>VIT University, Vellore</span></h3>
+              <p>Five-year integrated master’s programme.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── Stack ───────────── -->
+    <section class="section section--tight" id="stack" aria-labelledby="stack-h">
+      <div class="wrap two-col">
+        <header class="section__head">
+          <p class="eyebrow">Stack</p>
+          <h2 id="stack-h" class="h2">Tools I reach for</h2>
+        </header>
+        <div class="stack">
+          <div class="stack__group">
+            <h3 class="stack__h"><span class="layer-dot layer-dot--bronze" aria-hidden="true"></span>Data engineering</h3>
+            <ul class="tags"><li>Python</li><li>SQL</li><li>PySpark · Spark SQL</li><li>Databricks</li><li>Airflow · MWAA</li><li>AWS Glue</li><li>Athena</li><li>S3</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 class="stack__h"><span class="layer-dot layer-dot--silver" aria-hidden="true"></span>Modelling and storage</h3>
+            <ul class="tags"><li>Delta Lake</li><li>Apache Iceberg</li><li>Redshift</li><li>Medallion lakehouse</li><li>Dimensional modelling · SCD2</li><li>Change data capture</li><li>Data quality checks</li><li>Parquet</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 class="stack__h"><span class="layer-dot layer-dot--gold" aria-hidden="true"></span>AI and retrieval</h3>
+            <ul class="tags"><li>RAG</li><li>Embeddings</li><li>Vector search · pgvector</li><li>Hybrid BM25 + dense</li><li>Reranking</li><li>Retrieval metrics</li><li>LLM-as-judge</li></ul>
+          </div>
+          <div class="stack__group">
+            <h3 class="stack__h"><span class="layer-dot" aria-hidden="true"></span>Platform and backend</h3>
+            <ul class="tags"><li>PostgreSQL</li><li>FastAPI</li><li>Java · Spring Boot</li><li>TypeScript · Node.js</li><li>Docker</li><li>Terraform</li><li>GitHub Actions</li><li>AWS · GCP Cloud Run</li></ul>
+          </div>
+          <p class="stack__learning"><span class="mono">Learning now</span> dbt, Snowflake</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Contact ───────────── -->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact__inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-h" class="display display--contact">Let’s talk data.</h2>
+          <p class="lede">Happy to talk about data platform, retrieval or evaluation work. Email is the fastest way to reach me.</p>
+        </div>
+        <div class="contact__actions">
+          <div class="email">
+            <a class="email__addr" href="mailto:gunal.works@gmail.com" id="email-addr">gunal.works@gmail.com</a>
+            <button class="btn btn--small" type="button" id="copy-email" data-copy="gunal.works@gmail.com">Copy</button>
+          </div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          <ul class="contact__links">
+            <li><a href="https://www.linkedin.com/in/gunal1501/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://github.com/m3rcury02" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.kaggle.com/m3rcury02" target="_blank" rel="noopener">Kaggle ↗</a></li>
+            <li><a href="https://docs.google.com/document/d/1nr1VArzzYaGCP_PrYRdPdahzTRu625nc0UIqbj3aHV0/edit?usp=sharing" target="_blank" rel="noopener">Résumé ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>Hand-written HTML and CSS. No framework, no tracking.</p>
+      <p><a href="https://github.com/m3rcury02/FirstTailwind" target="_blank" rel="noopener">Source ↗</a> <span aria-hidden="true">·</span> Updated <time datetime="2026-11">November 2026</time></p>
+    </div>
+  </footer>
+</body>
+</html>
